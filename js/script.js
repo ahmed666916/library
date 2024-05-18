@@ -8,6 +8,11 @@ function Book(title, author, no_of_pages ,price) {
   this.price = price;
 }
 
+const Book1 = new Book("Harry Potter", "JK Rowling", 136, 1200 );
+
+console.log(Book1);
+
+
 function addBookToLibrary() {
   // do stuff here
 }

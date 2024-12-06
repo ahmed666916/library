@@ -13,6 +13,10 @@ const Book1 = new Book("Harry Potter", "JK Rowling", 136, 1200 );
 console.log(Book1);
 
 
-function addBookToLibrary() {
-  // do stuff here
+function addBookToLibrary(title, author, no_of_pages, price) {
+  
+  const newBook = new Book(title, author, no_of_pages, price);
+
+  myLibrary.push(newBook);
+
 }

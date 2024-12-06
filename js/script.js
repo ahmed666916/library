@@ -10,7 +10,7 @@ function Book(title, author, no_of_pages ,price) {
 
 const Book1 = new Book("Harry Potter", "JK Rowling", 136, 1200 );
 
-console.log(Book1);
+
 
 
 function addBookToLibrary(title, author, no_of_pages, price) {
@@ -20,3 +20,10 @@ function addBookToLibrary(title, author, no_of_pages, price) {
   myLibrary.push(newBook);
 
 }
+
+// Example usage
+addBookToLibrary("Harry Potter", "JK Rowling", 136, 1200);
+addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, 800);
+
+
+console.log(myLibrary);

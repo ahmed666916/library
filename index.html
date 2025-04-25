@@ -9,7 +9,31 @@
 <body>
 
       <h1>My Book Library</h1>
-  <div id="bookContainer" class="book-container"></div>
+
+
+  <button id="newBookBtn">+ New Book</button>
+
+  <!-- Book Form Modal -->
+<dialog id="bookDialog">
+  <form id="bookForm">
+    <h3>Add a New Book</h3>
+    <label>Title: <input type="text" id="title" required></label><br><br>
+    <label>Author: <input type="text" id="author" required></label><br><br>
+    <label>Pages: <input type="number" id="pages" required></label><br><br>
+    <label>Price: <input type="number" id="price" required></label><br><br>
+    <label>Read: 
+      <select id="read">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </label><br><br>
+    <button type="submit">Add Book</button>
+    <button type="button" id="closeDialog">Cancel</button>
+  </form>
+</dialog>
+
+<!-- Where books will appear -->
+<div id="bookContainer" class="book-container"></div>
 
     <script src="js/script.js"></script>
     

@@ -1,6 +1,6 @@
 const myLibrary = [];
 
-function Book(id, title, author, no_of_pages ,price) {
+function Book(title, author, no_of_pages ,price) {
   // the constructor...
   this.id = crypto.randomUUID();
   this.title = title;

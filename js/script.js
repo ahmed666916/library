@@ -1,15 +1,13 @@
 const myLibrary = [];
 
-function Book(title, author, no_of_pages ,price) {
+function Book(id, title, author, no_of_pages ,price) {
   // the constructor...
+  this.id = crypto.randomUUID();
   this.title = title;
   this.author = author;
   this.no_of_pages = no_of_pages;
   this.price = price;
 }
-
-const Book1 = new Book("Harry Potter", "JK Rowling", 136, 1200 );
-
 
 
 

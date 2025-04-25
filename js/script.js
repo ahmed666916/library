@@ -44,3 +44,4 @@ function displayBooks() {
 
 
 //console.log(myLibrary);
+displayBooks();
